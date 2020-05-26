@@ -16,17 +16,19 @@ Scott's Quick and Dirty Savage Worlds (Adventure Edition) Framework
 
 **Shaken**: Acts on selected token(s). If not shaken, sets shaken. If shaken, prompts for a spirit roll (with option to auto-succeed.) Only rolls a wild die for Wild Cards. If the roll is a success, removes Shaken status.
 
-**Wounds**: Wound tracking. Applies # of wounds to target; for healing enter a negative number. Automatically tracks wounds and sets statuses appropriately.
-
 **Elevation**: Set token elevation (0 clears the property.)
+
+**Set Initiative**: Set selected token's initiative (and add it to initiative if it wasn't already.)
+
+**Wound Calc**: Given damage, AP value, toughness, and armor, calculates number of wounds; use Wounds to apply them.
 
 **OTT** (**O**ff **t**he **T**able): Toggles a big gray **X** over the selected token(s), an extra-visible indicator that something is out of the fight but you don't want to remove the token.
 
 ### Tracking
 
-**Bennies**: These macros reset a token's available bennies (2 for NPC Wild Cards, 3 for PC Wild Cards,) spend a benny, or (GM only) adds one benny.
+**Bennies**: These macros reset a token's available bennies (to the value set in its maxbennies property,) spend a benny, or (GM only) adds one benny.
 
-**Wounds**: This macro adds or removes wounds to a token and sets appropriate states. Enter a negative number for healing.
+**Wounds**: Wound tracking. Applies # of wounds to target; for healing enter a negative number. Automatically tracks wounds and sets statuses appropriately.
 
 **Fatigue**: This macro adds or removes fatigue from a token and sets appropriate statuses. Multiple Exhausted statuses do not stack; the fatigue offensive power modifier cannot Incapacitate.
 
@@ -40,7 +42,7 @@ These macros change the selected token(s) to Extras or Wild Cards.
 
 **Statsheet**: The Parry, DisplayToughness, DisplayPace, and Bennies properties are displayed on the statsheet to the token owner; the Elevation property is shown to all.
 
-**Token Properties**: There are four types -- "Basic" is unchanged from the maptool default, "Deck" is used for card decks, "WildCard" is for Wild Cards, and "Extra" is for Extras. Wild Card and Extra token types include a number of values that can be used for deriving Parry and Toughness and for tracking Wounds, Fatigue, and Bennies.
+**Token Properties**: There are four types -- "Basic" is unchanged from the maptool default, "Deck" is used for card decks, "WildCard" is for Wild Cards, and "Extra" is for Extras. Wild Card and Extra token types include a number of values that can be used for deriving Parry and Toughness and for tracking Wounds, Fatigue, and Bennies. ignorewounds sets how many levels of wound penalties the token can ignore.
 
 # Other
 
